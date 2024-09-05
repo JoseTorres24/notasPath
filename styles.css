@@ -37,8 +37,8 @@ body {
     position:relative;
     top:5px;
     transition: transform .15s linear;
-    margin:1em;
-    gap: 100px;
+    margin:2em;
+    gap: 75px;
   }
   .elementoNota{
     position: absolute;
@@ -70,20 +70,33 @@ body {
     
 
 }
-.agregarNota{
-    justify-content: center;
-   font-weight: 100;
-    font-size: 26px;
-    width: 275px;
-    height: 100px;
-    top: 630px;
-    left: 720px;
-    gap: 0px;
-    opacity: 0px;
-    flex: 1;
-   
-
+.agregarNota {
+  padding: 10px; /* Espaciado interno para que el texto no esté pegado al borde */
+  font-weight: 100;
+  font-size: 26px;
+  width: 355px;
+  height: 150px;
+  top: 630px;
+  left: 720px;
+  gap: 0px;
+  font-size: medium;
+  font-display:unset;
+  resize: none; /* Evita que el usuario cambie el tamaño del textarea */
+  border: 2px solid rgb(0, 204, 255); /* Añade un borde azul */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  background-color: #fff; /* Fondo blanco */
+  color: #000; /* Texto en negro */
+  outline: none; /* Elimina el borde al hacer clic */
+  text-align: left; /* Alinea el texto a la izquierda */
+  
 }
+
+.agregarNota:focus {
+  border-color: #00e5ff; /* Cambia el color del borde cuando el campo tiene foco */
+  box-shadow: 0 4px 8px rgba(0, 0, 255, 0.3); /* Efecto de sombra al hacer foco */
+}
+
 .modelo1{
   background-color: pink;
 }
@@ -91,3 +104,22 @@ body {
 .modelo2{
   background-color: aqua;
 }
+
+
+.botonAgregar {
+  background-color: #00e5ff; /* Fondo azul claro */
+  border: 2px solid #000;    /* Borde negro */
+  color: #000;               /* Texto en negro */
+  font-weight: bold;         /* Texto en negrita */
+  font-size: 1.5em;          /* Tamaño de texto */
+  padding: 10px 20px;        /* Espaciado interno */
+  text-align: center;        /* Centrar el texto */
+  border-radius: 5px;        /* Bordes redondeados */
+  cursor: pointer;           /* Cursor de mano al pasar por encima */
+  transition: background-color 0.3s ease; /* Efecto de transición suave */
+}
+
+.botonAgregar:hover {
+  background-color: #00bfff; /* Cambiar color al pasar el ratón */
+}
+
