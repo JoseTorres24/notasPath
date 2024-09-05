@@ -8,22 +8,23 @@
 </head>
 <body>
     <div class="Nombre">Mis Post-its</div>
-    <ul>
-        <li>
-            <p>Text Content #1</p>  
+    <ul id="listaNotas">
+        <li class="modelo1">
+            <p>Recordar Trabajo mañana</p>  
         </li>
-        <li>
-            <p>Text Content #1</p>  
+        <li class="modelo2">
+            <p>Tareas acumuladas 
+                para dentro de 2 semanas
+            </p>  
         </li>
-        <li>
-            <p>Text Content #1</p>  
-        </li>
-        <div class="elementoNota">
-            <input type="text" class="agregarNota"></iput>
-            <button class="botonAgregar" id="boton">Agregar nota</button>
-        </div>
     
     </ul>
 
+    <div class="elementoNota">
+        <input type="text" class="agregarNota" id="agregarNota">
+        <button class="botonAgregar" id="boton" onclick="agregarPostits()">Agregar nota</button>
+    </div>
+
 </body>
+<script src="script.js"></script>
 </html>
