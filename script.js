@@ -19,7 +19,6 @@ function agregarPostits(){
 
     var lista = document.getElementById("listaNotas");
     lista.appendChild(nuevoElemento);
-    entradaTexto.innerHTML = " ";
     document.getElementById("agregarNota").value = '';
 }
 
